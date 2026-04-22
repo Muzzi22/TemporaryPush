@@ -441,7 +441,7 @@ namespace GLMS.Web.Controllers
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null) return NotFound();
             ViewBag.Clients = await _context.Clients.ToListAsync();
-            ViewBag.TargetUser = user;                                  // ← changed from ViewBag.User
+            ViewBag.TargetUser = user;
             return View("~/Views/Admin/AssignClient.cshtml", user);
         }
 
@@ -462,6 +462,34 @@ namespace GLMS.Web.Controllers
             }
             TempData["Success"] = $"{user.FullName} linked to client: {clientName}.";
             return Redirect("/Admin/Users");
+        }
+
+        // ── View all contracts with status controls ────────────
+        public async Task<IActionResult> Contracts()
+        {
+            var contracts = await _context.Contracts
+                .Include(c => c.Client)
+                .OrderByDescending(c => c.Id)
+                .ToListAsync();
+            return View("~/Views/Admin/Contracts.cshtml", contracts);
+        }
+
+        // ── Update contract status ────────────────────────────
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateContractStatus(
+            int contractId, GLMS.Web.Models.ContractStatus newStatus)
+        {
+            var contract = await _context.Contracts
+                .Include(c => c.Client)
+                .FirstOrDefaultAsync(c => c.Id == contractId);
+            if (contract == null) return NotFound();
+            var oldStatus = contract.Status;
+            contract.Status = newStatus;
+            await _context.SaveChangesAsync();
+            TempData["Success"] =
+                $"Contract #{contractId} status updated to {newStatus}.";
+            return RedirectToAction(nameof(Contracts));
         }
     }
 }

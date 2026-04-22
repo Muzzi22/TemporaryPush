@@ -1,0 +1,150 @@
+﻿@model IEnumerable<GLMS.Web.Models.Contract>
+@using GLMS.Web.Models
+@{
+    ViewData["Title"] = "Manage Contracts";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <a href="/Admin/Dashboard"
+               class="text-secondary text-decoration-none small">
+            &#8592; Admin Dashboard
+        </a>
+        <h2 class="mb-0 mt-1">Manage Contracts</h2>
+        <small class="text-muted">
+            Update contract statuses and view all contracts
+        </small>
+    </div>
+    <a asp-controller="Contracts"
+           asp-action="Create"
+           class="btn btn-dark">
+        + New Contract
+    </a>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mb-3">
+        <strong>Done!</strong> @TempData["Success"]
+        <button type="button" class="btn-close"
+                data-bs-dismiss="alert"></button>
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mb-3">
+        <strong>Error:</strong> @TempData["Error"]
+        <button type="button" class="btn-close"
+                data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="card">
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0 align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th class="ps-3">#</th>
+                    <th>Client</th>
+                    <th>Service Level</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Current Status</th>
+                    <th>Change Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="8"
+                            class="text-center text-muted py-5">
+                            <div style="font-size:2rem;">&#128196;</div>
+                            <div class="mt-2">No contracts found.</div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var contract in Model)
+                    {
+                        <tr>
+                            <td class="ps-3 text-muted small">
+                                @contract.Id
+                            </td>
+                            <td class="fw-semibold">
+                                @contract.Client?.Name
+                            </td>
+                            <td>@contract.ServiceLevel</td>
+                            <td class="small">
+                                @contract.StartDate.ToShortDateString()
+                            </td>
+                            <td class="small">
+                                @contract.EndDate.ToShortDateString()
+                            </td>
+                            <td>
+                                @{
+                                    var badgeClass = contract.Status switch
+                                    {
+                                        ContractStatus.Active =>
+                                            "bg-success",
+                                        ContractStatus.Expired =>
+                                            "bg-danger",
+                                        ContractStatus.OnHold =>
+                                            "bg-warning text-dark",
+                                        _ =>
+                                            "bg-secondary"
+                                    };
+                                }
+                                <span class="badge @badgeClass">
+                                    @contract.Status
+                                </span>
+                            </td>
+
+                            @* ── Inline status change form ── *@
+                            <td>
+                                <form asp-controller="Admin"
+                                      asp-action="UpdateContractStatus"
+                                      method="post"
+                                      class="d-flex align-items-center gap-2">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden"
+                                           name="contractId"
+                                           value="@contract.Id" />
+                                    <select name="newStatus"
+                                            class="form-select form-select-sm"
+                                            style="width:130px;">
+                                        @foreach (ContractStatus s in
+                                            Enum.GetValues<ContractStatus>())
+                                        {
+                                            <option value="@s"
+                                                    selected="@(contract.Status == s)">
+                                                @s
+                                            </option>
+                                        }
+                                    </select>
+                                    <button type="submit"
+                                            class="btn btn-sm btn-warning"
+                                            onclick="return confirm(
+                                        'Update contract #@contract.Id status?')">
+                                        Update
+                                    </button>
+                                </form>
+                            </td>
+
+                            <td>
+                                <a asp-controller="Contracts"
+                                       asp-action="Details"
+                                       asp-route-id="@contract.Id"
+                                       class="btn btn-sm btn-outline-secondary">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

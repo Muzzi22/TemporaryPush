@@ -53,6 +53,10 @@
           "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -85,9 +89,9 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
-            "itext7": {
+            "QuestPDF": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[2024.3.4, )"
             }
           },
           "imports": [

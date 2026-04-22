@@ -60,6 +60,7 @@ builder.Services.AddSingleton<ContractEventService>(provider =>
 builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddHttpClient<ICurrencyService, CurrencyService>();
 builder.Services.AddScoped<IContractPdfService, ContractPdfService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 var app = builder.Build();
 
