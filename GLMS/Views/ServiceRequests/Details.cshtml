@@ -1,0 +1,68 @@
+﻿@model GLMS.Web.Models.ServiceRequest
+@{
+    ViewData["Title"] = "Request Details";
+}
+
+<div class="mb-3">
+    <a asp-action="Index" class="text-secondary text-decoration-none">
+        &#8592; Back to Service Requests
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <div class="card">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Service Request #@Model.Id</h5>
+                @{
+                    var badgeClass = Model.Status switch
+                    {
+                        GLMS.Web.Models.RequestStatus.Pending => "bg-warning text-dark",
+                        GLMS.Web.Models.RequestStatus.InProgress => "bg-primary",
+                        GLMS.Web.Models.RequestStatus.Completed => "bg-success",
+                        GLMS.Web.Models.RequestStatus.Cancelled => "bg-danger",
+                        _ => "bg-secondary"
+                    };
+                }
+                <span class="badge @badgeClass fs-6">@Model.Status</span>
+            </div>
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <small class="text-muted d-block">Contract</small>
+                        <a asp-controller="Contracts"
+                               asp-action="Details"
+                               asp-route-id="@Model.ContractId"
+                               class="fw-semibold">
+                            Contract #@Model.ContractId
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <small class="text-muted d-block">Client</small>
+                        <strong>@Model.Contract?.Client?.Name</strong>
+                    </div>
+                    <div class="col-12">
+                        <small class="text-muted d-block">Description</small>
+                        <p class="mb-0">@Model.Description</p>
+                    </div>
+                    <div class="col-md-4">
+                        <small class="text-muted d-block">Cost (USD)</small>
+                        <strong class="fs-5">$@Model.CostUSD.ToString("N2")</strong>
+                    </div>
+                    <div class="col-md-4">
+                        <small class="text-muted d-block">Cost (ZAR)</small>
+                        <strong class="fs-5 text-success">R @Model.CostZAR.ToString("N2")</strong>
+                    </div>
+                    <div class="col-md-4">
+                        <small class="text-muted d-block">Rate Used</small>
+                        <strong>@Model.ExchangeRateUsed.ToString("N4")</strong>
+                    </div>
+                    <div class="col-md-6">
+                        <small class="text-muted d-block">Date Created</small>
+                        <strong>@Model.CreatedAt.ToString("dd MMM yyyy HH:mm")</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

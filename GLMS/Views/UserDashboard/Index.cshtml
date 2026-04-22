@@ -1,0 +1,138 @@
+﻿@using GLMS.Web.Models
+@{
+    ViewData["Title"] = "My Dashboard";
+    var notifications = ViewBag.Notifications as List<ContractNotification> ?? new();
+    var activeContracts = ViewBag.ActiveContracts as List<Contract> ?? new();
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="mb-0">Welcome, @ViewBag.UserName &#128075;</h2>
+        <small class="text-muted">Here are your active contracts and notifications</small>
+    </div>
+</div>
+
+@* ── Notifications ── *@
+@if (notifications.Any())
+{
+    <div class="mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="mb-0">
+                &#128276; Notifications
+                <span class="badge bg-danger ms-1">@notifications.Count</span>
+            </h5>
+            <form asp-action="MarkAllAsRead" method="post" class="d-inline">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-sm btn-outline-secondary">
+                    Mark all as read
+                </button>
+            </form>
+        </div>
+
+        @foreach (var notification in notifications)
+        {
+            <div class="alert mb-2"
+                 style="background:#eef6ff; border:1px solid #bfdbfe;
+                border-left:4px solid #3b82f6; border-radius:8px;">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <strong style="color:#1d4ed8;">&#9679; Contract Activated</strong>
+                        <div class="mt-1" style="font-size:0.9rem;">
+                            @notification.Message
+                        </div>
+                        <small class="text-muted">
+                            @notification.CreatedAt.ToString("dd MMM yyyy HH:mm")
+                        </small>
+                    </div>
+                    <div class="d-flex gap-2 ms-3 flex-shrink-0">
+                        <a asp-controller="Contracts"
+                               asp-action="Details"
+                               asp-route-id="@notification.ContractId"
+                               class="btn btn-sm btn-outline-primary">
+                            View Contract
+                        </a>
+                        <form asp-action="MarkAsRead" method="post" class="d-inline">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@notification.Id" />
+                            <button type="submit" class="btn btn-sm btn-outline-secondary">
+                                &#10005;
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert mb-4"
+         style="background:#f0fdf4; border:1px solid #bbf7d0;
+        border-left:4px solid #22c55e; border-radius:8px;">
+        <strong style="color:#15803d;">&#10003; You are up to date</strong>
+        <span class="text-muted ms-2" style="font-size:0.9rem;">
+            No new notifications.
+        </span>
+    </div>
+}
+
+@* ── Active contracts ── *@
+<h5 class="mb-3">&#128196; Active Contracts</h5>
+
+@if (!activeContracts.Any())
+{
+    <div class="card">
+        <div class="card-body text-center text-muted py-5">
+            <div style="font-size:2rem;">&#128196;</div>
+            <div class="mt-2">No active contracts at the moment.</div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row g-3">
+        @foreach (var contract in activeContracts)
+        {
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <h6 class="fw-bold mb-0">@contract.Client?.Name</h6>
+                                <small class="text-muted">Contract #@contract.Id</small>
+                            </div>
+                            <span class="badge badge-Active">Active</span>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col-6">
+                                <small class="text-muted d-block">Service Level</small>
+                                <strong>@contract.ServiceLevel</strong>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted d-block">Expires</small>
+                                <strong>@contract.EndDate.ToShortDateString()</strong>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a asp-controller="Contracts"
+                                   asp-action="Details"
+                                   asp-route-id="@contract.Id"
+                                   class="btn btn-sm btn-dark">
+                                View Details
+                            </a>
+                            @if (!string.IsNullOrEmpty(contract.SignedAgreementPath))
+                            {
+                                <a asp-controller="Contracts"
+                                       asp-action="DownloadAgreement"
+                                       asp-route-id="@contract.Id"
+                                       class="btn btn-sm btn-outline-success">
+                                    &#11123; Download PDF
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

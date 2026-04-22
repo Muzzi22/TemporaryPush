@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "New Client";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h5 class="mb-0">Register New Client</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Client Name</label>
+                        <input type="text" name="Name" class="form-control" required placeholder="e.g. Acme Freight Ltd" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Contact Details</label>
+                        <input type="text" name="ContactDetails" class="form-control" required placeholder="Email or phone number" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Region</label>
+                        <select name="Region" class="form-select" required>
+                            <option value="">-- Select Region --</option>
+                            <option>Africa</option>
+                            <option>Europe</option>
+                            <option>North America</option>
+                            <option>South America</option>
+                            <option>Asia Pacific</option>
+                            <option>Middle East</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-dark">Save Client</button>
+                        <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

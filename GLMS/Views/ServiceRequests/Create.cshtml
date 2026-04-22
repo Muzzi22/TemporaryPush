@@ -1,0 +1,134 @@
+﻿@using GLMS.Web.Models
+@{
+    ViewData["Title"] = "New Service Request";
+}
+
+@{
+    var activeContracts = ViewBag.ActiveContracts as List<Contract> ?? new List<Contract>();
+    int? selectedId = ViewBag.SelectedContractId as int?;
+    decimal exchangeRate = ViewBag.ExchangeRate ?? 18.50m;
+}
+
+<div class="mb-3">
+    <a asp-action="Index" class="text-secondary text-decoration-none">
+        &#8592; Back to Service Requests
+    </a>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h5 class="mb-0">New Service Request</h5>
+                <small class="text-secondary">Only active contracts are available</small>
+            </div>
+            <div class="card-body">
+
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger py-2 small mb-3">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <div>@error.ErrorMessage</div>
+                        }
+                    </div>
+                }
+
+                <form asp-action="Create" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <!-- Contract selector -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Contract</label>
+                        <select name="contractId" id="contractId" class="form-select" required>
+                            <option value="">-- Select an Active Contract --</option>
+                            @foreach (var contract in activeContracts)
+                            {
+                                var isSelected = selectedId.HasValue && selectedId.Value == contract.Id;
+                                <option value="@contract.Id" selected="@isSelected">
+                                    #@contract.Id — @contract.Client?.Name (@contract.ServiceLevel)
+                                    | Ends: @contract.EndDate.ToString("dd MMM yyyy")
+                                </option>
+                            }
+                        </select>
+                        <div class="form-text text-muted">
+                            Only active contracts are shown. Expired or on-hold contracts cannot
+                            have service requests raised against them.
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Description</label>
+                        <textarea name="description"
+                                  class="form-control"
+                                  rows="3"
+                                  required
+                                  placeholder="Describe the service required in detail..."></textarea>
+                    </div>
+
+                    <!-- Cost input -->
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Cost (USD)</label>
+                        <div class="input-group">
+                            <span class="input-group-text fw-bold">$</span>
+                            <input type="number"
+                                   name="costUSD"
+                                   id="costUSD"
+                                   class="form-control"
+                                   step="0.01"
+                                   min="0.01"
+                                   required
+                                   placeholder="0.00"
+                                   oninput="convertCurrency(this.value)" />
+                        </div>
+                    </div>
+
+                    <!-- Live ZAR conversion -->
+                    <div class="mb-4 p-3 rounded"
+                         style="background:#f0fdf4; border:1px solid #bbf7d0;">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="fw-semibold text-success" style="font-size:0.85rem;">
+                                    Estimated Cost in ZAR
+                                </div>
+                                <small class="text-muted">
+                                    Live rate: 1 USD = R @exchangeRate.ToString("N4")
+                                </small>
+                            </div>
+                            <div class="fs-4 fw-bold text-success" id="zar-preview">
+                                R 0.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-dark px-4">
+                            Submit Request
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary">
+                            Cancel
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const rate = @exchangeRate;
+
+        function convertCurrency(val) {
+            const amount = parseFloat(val) || 0;
+            const zar = (amount * rate).toFixed(2);
+            document.getElementById('zar-preview').textContent =
+                'R ' + parseFloat(zar).toLocaleString('en-ZA', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                });
+        }
+    </script>
+}

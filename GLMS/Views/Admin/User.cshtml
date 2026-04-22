@@ -1,0 +1,205 @@
+﻿@using GLMS.Web.Models
+@using Microsoft.AspNetCore.Identity
+@model List<ApplicationUser>
+@{
+    ViewData["Title"] = "User Management";
+    var userRoles = ViewBag.UserRoles as Dictionary<string, IList<string>> ?? new Dictionary<string, IList<string>>();
+    int counter = 1;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <a href="/Admin/Dashboard" class="text-secondary text-decoration-none small">
+            &#8592; Admin Dashboard
+        </a>
+        <h2 class="mb-0 mt-1">User Management</h2>
+        <small class="text-muted">Manage roles and access for all registered users</small>
+    </div>
+    <span class="badge bg-dark fs-6">@Model.Count Users</span>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mb-3" role="alert">
+        <strong>Done!</strong> @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+        <strong>Error:</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="card">
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0 align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th class="ps-3" style="width:50px;">#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Registered</th>
+                    <th class="text-end pe-3">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted py-4">
+                            No users found.
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var user in Model)
+                    {
+                        var roles = userRoles.ContainsKey(user.Id)
+                            ? userRoles[user.Id]
+                            : new List<string>();
+
+                        bool isAdmin = roles.Contains("Admin");
+                        bool isCurrentUser = user.Email == User.Identity!.Name;
+                        string initial = !string.IsNullOrEmpty(user.FullName)
+                            ? user.FullName.Substring(0, 1).ToUpper()
+                            : user.Email!.Substring(0, 1).ToUpper();
+
+                        <tr>
+                            <td class="ps-3 text-muted small">@counter</td>
+
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div style="width:38px; height:38px; border-radius:50%;
+                                        background:@(isAdmin ? "#6c63ff" : "#e9ecef");
+                                        display:flex; align-items:center; justify-content:center;
+                                        font-size:0.85rem; font-weight:700;
+                                        color:@(isAdmin ? "#fff" : "#6c757d");
+                                        flex-shrink:0;">
+                                        @initial
+                                    </div>
+                                    <div>
+                                        <div class="fw-semibold" style="font-size:0.9rem; line-height:1.2;">
+                                            @(string.IsNullOrEmpty(user.FullName) ? "No Name Set" : user.FullName)
+                                        </div>
+                                        @if (isCurrentUser)
+                                        {
+                                            <span class="badge bg-secondary"
+                                                  style="font-size:0.6rem; padding:2px 6px;">
+                                                You
+                                            </span>
+                                        }
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="text-muted" style="font-size:0.875rem;">
+                                @user.Email
+                            </td>
+
+                            <td>
+                                @if (isAdmin)
+                                {
+                                    <span class="badge"
+                                          style="background:rgba(108,99,255,0.12);
+                                        color:#6c63ff;
+                                        border:1px solid rgba(108,99,255,0.35);
+                                        font-size:0.75rem;
+                                        padding:4px 10px;">
+                                        &#128274; Admin
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary"
+                                          style="font-size:0.75rem; padding:4px 10px;">
+                                        &#128100; User
+                                    </span>
+                                }
+                            </td>
+
+                            <td class="text-muted" style="font-size:0.85rem;">
+                                @user.CreatedAt.ToString("dd MMM yyyy")
+                            </td>
+
+                            <td class="text-end pe-3">
+                                @if (isCurrentUser)
+                                {
+                                    <span class="text-muted small fst-italic">Current account</span>
+                                }
+                                else
+                                {
+                                    <div class="d-flex justify-content-end align-items-center gap-2">
+
+                                        @* Promote / Demote *@
+                                        @if (!isAdmin)
+                                        {
+                                            <form asp-controller="Admin"
+                                                  asp-action="PromoteToAdmin"
+                                                  method="post"
+                                                  class="d-inline m-0">
+                                                @Html.AntiForgeryToken()
+                                                <input type="hidden" name="userId" value="@user.Id" />
+                                                <button type="submit"
+                                                        class="btn btn-sm btn-outline-dark"
+                                                        style="font-size:0.75rem;"
+                                                        onclick="return confirm('Promote @Html.Raw(user.FullName ?? user.Email) to Admin?')">
+                                                    &#8593; Promote
+                                                </button>
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            <form asp-controller="Admin"
+                                                  asp-action="DemoteToUser"
+                                                  method="post"
+                                                  class="d-inline m-0">
+                                                @Html.AntiForgeryToken()
+                                                <input type="hidden" name="userId" value="@user.Id" />
+                                                <button type="submit"
+                                                        class="btn btn-sm btn-outline-warning"
+                                                        style="font-size:0.75rem;"
+                                                        onclick="return confirm('Demote @Html.Raw(user.FullName ?? user.Email) to regular User?')">
+                                                    &#8595; Demote
+                                                </button>
+                                            </form>
+                                        }
+
+                                        @* Assign Client *@
+                                        <a href="/Admin/AssignClient?userId=@user.Id"
+                                               class="btn btn-sm btn-outline-primary"
+                                               style="font-size:0.75rem;">
+                                            &#128279; Assign Client
+                                        </a>
+
+                                        @* Delete *@
+                                        <form asp-controller="Admin"
+                                              asp-action="DeleteUser"
+                                              method="post"
+                                              class="d-inline m-0">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="userId" value="@user.Id" />
+                                            <button type="submit"
+                                                    class="btn btn-sm btn-outline-danger"
+                                                    style="font-size:0.75rem;"
+                                                    onclick="return confirm('Permanently delete @Html.Raw(user.FullName ?? user.Email)? This cannot be undone.')">
+                                                &#128465; Delete
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                }
+                            </td>
+                        </tr>
+
+                        counter++;
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

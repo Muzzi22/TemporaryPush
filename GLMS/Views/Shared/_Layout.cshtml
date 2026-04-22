@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] — GLMS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        body { background-color: #f8f9fa; }
+
+        /* ── Navbar ── */
+        .navbar-brand { font-weight: 700; letter-spacing: 1px; }
+        .navbar { border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .user-pill {
+            background: rgba(108,99,255,0.15);
+            border: 1px solid rgba(108,99,255,0.3);
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            color: #a89fff;
+        }
+
+        /* ── Sidebar ── */
+        .sidebar {
+            min-height: calc(100vh - 56px);
+            background: #1a1a2e;
+            border-right: 1px solid #2a2a4a;
+            padding-top: 1.25rem;
+        }
+        .sidebar-section-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #4a4a6a;
+            padding: 6px 20px 4px;
+            margin-top: 8px;
+        }
+        .sidebar .nav-link {
+            color: #8888aa;
+            padding: 9px 20px;
+            border-radius: 6px;
+            margin: 1px 8px;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.15s, color 0.15s;
+        }
+        .sidebar .nav-link:hover {
+            color: #fff;
+            background: rgba(255,255,255,0.07);
+        }
+        .sidebar .nav-link.active {
+            color: #fff;
+            background: rgba(108,99,255,0.25);
+        }
+        .sidebar .nav-link .nav-icon {
+            width: 18px;
+            text-align: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        .sidebar-divider {
+            border-color: #2a2a4a;
+            margin: 10px 16px;
+        }
+        .admin-badge {
+            font-size: 0.65rem;
+            background: rgba(255,193,7,0.15);
+            color: #ffc107;
+            border: 1px solid rgba(255,193,7,0.3);
+            border-radius: 4px;
+            padding: 1px 6px;
+            margin-left: auto;
+        }
+
+        /* ── Main content ── */
+        .main-content { padding: 2rem; }
+
+        /* ── Status badges ── */
+        .badge-Draft   { background-color: #6c757d !important; }
+        .badge-Active  { background-color: #198754 !important; }
+        .badge-Expired { background-color: #dc3545 !important; }
+        .badge-OnHold  { background-color: #fd7e14 !important; }
+
+        /* ── Cards ── */
+        .card {
+            border: none;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            border-radius: 10px;
+        }
+        .card-header { border-radius: 10px 10px 0 0 !important; }
+    </style>
+</head>
+<body>
+
+    <!-- ══════════════════ NAVBAR ══════════════════ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="navbar-brand" asp-controller="Contracts" asp-action="Index">
+                &#9650; GLMS
+            </a>
+            <span class="navbar-text text-secondary small d-none d-md-inline">
+                Global Logistics Management System
+            </span>
+
+            <!-- Right side -->
+            <div class="ms-auto d-flex align-items-center gap-3">
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <!-- Admin panel button (admin only) -->
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a asp-controller="Admin" asp-action="Dashboard"
+                           class="btn btn-sm btn-warning d-none d-md-inline-flex align-items-center gap-1">
+                            &#128274; <span>Admin Panel</span>
+                        </a>
+                    }
+
+                    <!-- Logged-in user pill -->
+                    <span class="user-pill d-none d-md-inline">
+                        &#9679;&nbsp;@User.Identity.Name
+                    </span>
+
+                    <!-- Sign out -->
+                    <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline mb-0">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-sm btn-outline-secondary">
+                            Sign Out
+                        </button>
+                    </form>
+                }
+                else
+                {
+                    <a asp-controller="Account" asp-action="Login" class="btn btn-sm btn-outline-light">
+                        Sign In
+                    </a>
+                }
+            </div>
+
+        </div>
+    </nav>
+    <!-- ══════════════════ END NAVBAR ══════════════════ -->
+
+
+    <div class="d-flex">
+
+        <!-- ══════════════════ SIDEBAR ══════════════════ -->
+        @if (User.Identity?.IsAuthenticated == true)
+        {
+            <div class="sidebar col-md-2 d-none d-md-block">
+
+                <!-- Admin section (admin only) -->
+                @if (User.IsInRole("Admin"))
+                {
+                    <div class="sidebar-section-label">Admin</div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Admin" ? "active" : "")"
+                               asp-controller="Admin" asp-action="Dashboard">
+                                <span class="nav-icon">&#128274;</span>
+                                Dashboard
+                                <span class="admin-badge">Admin</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Admin" && ViewContext.RouteData.Values["action"]?.ToString() == "Users" ? "active" : "")"
+                               asp-controller="Admin" asp-action="Users">
+                                <span class="nav-icon">&#128101;</span>
+                                Manage Users
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="sidebar-divider" />
+                }
+
+                <!-- Main navigation -->
+                <div class="sidebar-section-label">Navigation</div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Clients" ? "active" : "")"
+                           asp-controller="Clients" asp-action="Index">
+                            <span class="nav-icon">&#128100;</span>
+                            Clients
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Contracts" ? "active" : "")"
+                           asp-controller="Contracts" asp-action="Index">
+                            <span class="nav-icon">&#128196;</span>
+                            Contracts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "ServiceRequests" ? "active" : "")"
+                           asp-controller="ServiceRequests" asp-action="Index">
+                            <span class="nav-icon">&#128203;</span>
+                            Service Requests
+                        </a>
+                    </li>
+                </ul>
+
+                <hr class="sidebar-divider" />
+
+                <!-- Account section -->
+                <div class="sidebar-section-label">Account</div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <span class="nav-link" style="cursor:default; color:#4a4a6a;">
+                            <span class="nav-icon">&#9679;</span>
+                            <span style="font-size:0.8rem; word-break:break-all;">@User.Identity.Name</span>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <form asp-controller="Account" asp-action="Logout" method="post" class="mb-0">
+                            @Html.AntiForgeryToken()
+                            <button type="submit"
+                                    class="nav-link w-100 text-start border-0 bg-transparent"
+                                    style="color:#cc4444;">
+                                <span class="nav-icon">&#8592;</span>
+                                Sign Out
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+
+            </div>
+        }
+        <!-- ══════════════════ END SIDEBAR ══════════════════ -->
+
+
+        <!-- ══════════════════ MAIN CONTENT ══════════════════ -->
+        <div class="main-content @(User.Identity?.IsAuthenticated == true ? "col-md-10" : "col-12")">
+
+            <!-- Alert: Error -->
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Error:</strong> @TempData["Error"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            <!-- Alert: Success -->
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Done!</strong> @TempData["Success"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            @RenderBody()
+        </div>
+        <!-- ══════════════════ END MAIN CONTENT ══════════════════ -->
+
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

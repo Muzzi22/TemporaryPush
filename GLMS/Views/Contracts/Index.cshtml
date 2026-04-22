@@ -1,0 +1,186 @@
+﻿@model IEnumerable<GLMS.Web.Models.Contract>
+@using GLMS.Web.Models
+@{
+    ViewData["Title"] = "Contracts";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="mb-0">Contracts</h2>
+        @if (!User.IsInRole("Admin"))
+        {
+            <small class="text-muted">
+                Your active contracts — download your signed agreement below.
+            </small>
+        }
+    </div>
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Create" class="btn btn-dark">+ New Contract</a>
+    }
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mb-3">
+        <strong>Done!</strong> @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mb-3">
+        <strong>Error:</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+@* ── Not linked message OR main content ── *@
+@if (ViewBag.NotLinked == true)
+{
+    <div class="card">
+        <div class="card-body text-center py-5">
+            <div style="font-size:3rem;">&#128274;</div>
+            <h5 class="mt-3">Account Not Linked</h5>
+            <p class="text-muted">
+                Your account is not linked to a client company yet.<br />
+                Please contact your administrator to have your account assigned.
+            </p>
+        </div>
+    </div>
+}
+else
+{
+    @* Admin filter *@
+    @if (User.IsInRole("Admin"))
+    {
+        <div class="card mb-4">
+            <div class="card-body">
+                <form method="get" asp-action="Index" class="row g-3 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label small text-muted">Start Date From</label>
+                        <input type="date" name="startDate" class="form-control form-control-sm"
+                               value="@(ViewBag.StartDate != null ? ((DateTime)ViewBag.StartDate).ToString("yyyy-MM-dd") : "")" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label small text-muted">End Date To</label>
+                        <input type="date" name="endDate" class="form-control form-control-sm"
+                               value="@(ViewBag.EndDate != null ? ((DateTime)ViewBag.EndDate).ToString("yyyy-MM-dd") : "")" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label small text-muted">Status</label>
+                        <select name="status" class="form-select form-select-sm">
+                            <option value="">All Statuses</option>
+                            @foreach (ContractStatus s in ViewBag.StatusList)
+                            {
+                                <option value="@s"
+                                        selected="@(ViewBag.SelectedStatus?.ToString() == s.ToString())">
+                                    @s
+                                </option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-3 d-flex gap-2">
+                        <button type="submit" class="btn btn-sm btn-dark">Filter</button>
+                        <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Clear</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+
+    <div class="card">
+        <div class="card-body p-0">
+            <table class="table table-hover mb-0 align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="ps-3">Client</th>
+                        <th>Service Level</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status</th>
+                        <th>Contract Agreement</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!Model.Any())
+                    {
+                        <tr>
+                            <td colspan="7" class="text-center text-muted py-5">
+                                <div style="font-size:2rem;">&#128196;</div>
+                                <div class="mt-2">No contracts found.</div>
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var contract in Model)
+                        {
+                            <tr>
+                                <td class="ps-3 fw-semibold">@contract.Client?.Name</td>
+                                <td>@contract.ServiceLevel</td>
+                                <td>@contract.StartDate.ToShortDateString()</td>
+                                <td>@contract.EndDate.ToShortDateString()</td>
+                                <td>
+                                    <span class="badge badge-@contract.Status.ToString()">
+                                        @contract.Status
+                                    </span>
+                                </td>
+
+                                @* ── Contract Agreement column ── *@
+                                <td>
+                                    @if (!string.IsNullOrEmpty(contract.SignedAgreementPath))
+                                    {
+                                        @* File exists — show download to EVERYONE *@
+                                        <a asp-action="DownloadAgreement"
+                                               asp-route-id="@contract.Id"
+                                               class="btn btn-sm btn-success d-inline-flex align-items-center gap-1">
+                                            &#11123; Download PDF
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            @* Admin sees upload button when no file *@
+                                            <a asp-action="UploadAgreement"
+                                                   asp-route-id="@contract.Id"
+                                                   class="btn btn-sm btn-outline-dark">
+                                                &#11014; Upload PDF
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            @* Client sees a pending message *@
+                                            <span class="badge bg-secondary">
+                                                &#9203; Pending Upload
+                                            </span>
+                                        }
+                                    }
+                                </td>
+
+                                <td class="text-end pe-3">
+                                    <a asp-action="Details"
+                                           asp-route-id="@contract.Id"
+                                           class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </a>
+                                    @if (User.IsInRole("Admin") &&
+                                         !string.IsNullOrEmpty(contract.SignedAgreementPath))
+                                    {
+                                        <a asp-action="UploadAgreement"
+                                               asp-route-id="@contract.Id"
+                                               class="btn btn-sm btn-outline-dark ms-1">
+                                            &#8635; Replace
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

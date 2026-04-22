@@ -1,0 +1,86 @@
+﻿@model IEnumerable<GLMS.Web.Models.Client>
+@{
+    ViewData["Title"] = "Clients";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="mb-0">Clients</h2>
+        <small class="text-muted">All registered clients</small>
+    </div>
+
+    @* Only admin can add new clients *@
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Create" class="btn btn-dark">+ New Client</a>
+    }
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mb-3">
+        <strong>Done!</strong> @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mb-3">
+        <strong>Error:</strong> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="card">
+    <div class="card-body p-0">
+        <table class="table table-hover mb-0">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Region</th>
+                    <th>Contracts</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="5" class="text-center text-muted py-5">
+                            <div style="font-size:2rem;">&#128100;</div>
+                            <div class="mt-2">No clients found.</div>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var client in Model)
+                    {
+                        <tr>
+                            <td class="fw-semibold">@client.Name</td>
+                            <td>@client.ContactDetails</td>
+                            <td>
+                                <span class="badge bg-secondary">@client.Region</span>
+                            </td>
+                            <td>@client.Contracts.Count()</td>
+                            <td class="text-end">
+                                <a asp-action="Details"
+                                   asp-route-id="@client.Id"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
+
+                                @* Only admin can edit clients *@
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a asp-action="Edit"
+                                       asp-route-id="@client.Id"
+                                       class="btn btn-sm btn-outline-dark ms-1">Edit</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
