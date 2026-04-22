@@ -43,19 +43,18 @@ namespace GLMS.Web.Controllers
             _env = env;
         }
 
-        // ── Index ─────────────────────────────────────────────
         public async Task<IActionResult> Index(
             DateTime? startDate, DateTime? endDate, ContractStatus? status)
         {
             IEnumerable<Contract> contracts;
             if (User.IsInRole("Admin"))
             {
-                // Admin always sees ALL contracts — no client check
+                
                 contracts = await _contractRepo.SearchAsync(startDate, endDate, status);
             }
             else
             {
-                // Regular user — check if linked to a client
+                
                 var user = await _userManager.GetUserAsync(User);
                 if (user?.ClientId == null)
                 {
@@ -96,7 +95,7 @@ namespace GLMS.Web.Controllers
 
             var loggedInUser = await _userManager.GetUserAsync(User);
 
-            // Check if client already uploaded signed contract
+            
             var signedUpload = await _context.ClientSignedContracts
                 .FirstOrDefaultAsync(s => s.ContractId == id);
 

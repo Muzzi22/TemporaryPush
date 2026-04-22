@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\contractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\contracts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\contracts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -53,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421100525_linkusertoclientandsignedcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421100525_linkusertoclientandsignedcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -280,7 +280,7 @@
               "RelativeDocumentMoniker": "GLMS\\Controllers\\ContractController.cs",
               "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\ContractController.cs",
               "RelativeToolTip": "GLMS\\Controllers\\ContractController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAIgBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAYwGEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-20T18:02:15.418Z",
               "EditorCaption": ""
@@ -288,18 +288,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "GLMS\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "GLMS\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAALgBAAAAAAAAAAAowNIBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T18:30:40.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AssignClient.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Admin\\AssignClient.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Admin\\AssignClient.cshtml",
@@ -311,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Contracts\\Index.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Contracts\\Index.cshtml",
@@ -319,8 +307,7 @@
               "RelativeToolTip": "GLMS\\Views\\Contracts\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-20T18:12:26.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T18:12:26.31Z"
             },
             {
               "$type": "Document",
@@ -336,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Contracts\\Details.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Contracts\\Details.cshtml",
@@ -348,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Program.cs",
               "RelativeDocumentMoniker": "GLMS\\Program.cs",
@@ -360,7 +347,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "GLMS\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "GLMS\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAiwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T18:30:07.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "GLMS\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "GLMS\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAALgBAAAAAAAAAAAowNIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T18:30:40.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ContractPdfService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\ContractPdfService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\ContractPdfService.cs",
@@ -372,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "User.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Admin\\User.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Admin\\User.cshtml",
@@ -384,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IContractPdfService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\IContractPdfService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\IContractPdfService.cs",
@@ -408,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\ApplicationUser.cs",
@@ -420,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "20260421100525_LinkUserToClientAndSignedContracts.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260421100525_LinkUserToClientAndSignedContracts.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260421100525_LinkUserToClientAndSignedContracts.cs",
@@ -432,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ClientSignedContract.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\ClientSignedContract.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\ClientSignedContract.cs",
@@ -444,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "GLMS\\Data\\AppDbContext.cs",
@@ -477,18 +489,6 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-21T09:14:55.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "GLMS\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "GLMS\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAswIIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T18:30:07.935Z"
             },
             {
               "$type": "Document",
