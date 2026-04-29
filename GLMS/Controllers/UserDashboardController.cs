@@ -47,7 +47,7 @@ namespace GLMS.Web.Controllers
             return View();
         }
 
-        // Mark a notification as read
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> MarkAsRead(int id)
@@ -65,7 +65,7 @@ namespace GLMS.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // Mark all notifications as read
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> MarkAllAsRead()

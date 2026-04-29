@@ -28,7 +28,7 @@ namespace GLMS.Web.Controllers
             _antiforgery = antiforgery;
         }
 
-        // ── Dashboard ──────────────────────────────────────────
+        // The dashboard 
         public async Task<IActionResult> Dashboard()
         {
             ViewBag.TotalUsers = _userManager.Users.Count();
@@ -41,7 +41,7 @@ namespace GLMS.Web.Controllers
             return View();
         }
 
-        // ── Users (inline HTML — no view file needed) ──────────
+        // 
         public async Task<IActionResult> Users()
         {
             var users = _userManager.Users.ToList();
@@ -50,11 +50,11 @@ namespace GLMS.Web.Controllers
             foreach (var u in users)
                 userRoles[u.Id] = await _userManager.GetRolesAsync(u);
 
-            // Get antiforgery token once
+           
             var tokens = _antiforgery.GetAndStoreTokens(HttpContext);
             string token = tokens.RequestToken ?? "";
 
-            // ── Build table rows ──
+            //  Build table rows 
             var rows = "";
             int counter = 1;
 
@@ -350,7 +350,7 @@ namespace GLMS.Web.Controllers
             return Content(html, "text/html");
         }
 
-        // ── Promote ────────────────────────────────────────────
+        // promote 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> PromoteToAdmin(string userId)
@@ -372,7 +372,7 @@ namespace GLMS.Web.Controllers
             return Redirect("/Admin/Users");
         }
 
-        // ── Demote ─────────────────────────────────────────────
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DemoteToUser(string userId)
@@ -394,7 +394,7 @@ namespace GLMS.Web.Controllers
             return Redirect("/Admin/Users");
         }
 
-        // ── Delete ─────────────────────────────────────────────
+        //Delete 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteUser(string userId)
@@ -417,7 +417,7 @@ namespace GLMS.Web.Controllers
             return Redirect("/Admin/Users");
         }
 
-        // ── Expire old contracts ───────────────────────────────
+        // expiring of old contracts
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ExpireOldContracts()
@@ -435,7 +435,7 @@ namespace GLMS.Web.Controllers
             return Redirect("/Admin/Dashboard");
         }
 
-        // ── Show assign client form ───────────────────────────
+        // show assigned client form
         public async Task<IActionResult> AssignClient(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);
@@ -445,7 +445,7 @@ namespace GLMS.Web.Controllers
             return View("~/Views/Admin/AssignClient.cshtml", user);
         }
 
-        // ── Save client assignment ────────────────────────────
+        // save client
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AssignClient(string userId, int? clientId)
@@ -464,7 +464,7 @@ namespace GLMS.Web.Controllers
             return Redirect("/Admin/Users");
         }
 
-        // ── View all contracts with status controls ────────────
+        // viewing of contracts through status controls
         public async Task<IActionResult> Contracts()
         {
             var contracts = await _context.Contracts
@@ -474,7 +474,7 @@ namespace GLMS.Web.Controllers
             return View("~/Views/Admin/Contracts.cshtml", contracts);
         }
 
-        // ── Update contract status ────────────────────────────
+        // updating the status of your contract
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateContractStatus(

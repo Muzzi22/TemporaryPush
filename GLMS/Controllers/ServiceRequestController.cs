@@ -28,7 +28,7 @@ namespace GLMS.Web.Controllers
             _context = context;
         }
 
-        // GET: /ServiceRequests/Index
+        
         public async Task<IActionResult> Index()
         {
             var requests = await _context.ServiceRequests
@@ -40,11 +40,10 @@ namespace GLMS.Web.Controllers
             return View(requests);
         }
 
-        // GET: /ServiceRequests/Create
-        // contractId is optional — if coming from contract details it's pre-selected
+        
         public async Task<IActionResult> Create(int? contractId)
         {
-            // Only load ACTIVE contracts into the dropdown
+            
             var activeContracts = await _context.Contracts
                 .Include(c => c.Client)
                 .Where(c => c.Status == ContractStatus.Active)
@@ -66,12 +65,12 @@ namespace GLMS.Web.Controllers
             return View();
         }
 
-        // POST: /ServiceRequests/Create
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(int contractId, string description, decimal costUSD)
         {
-            // Reload view data in case we need to return with errors
+            
             var activeContracts = await _context.Contracts
                 .Include(c => c.Client)
                 .Where(c => c.Status == ContractStatus.Active)
@@ -82,7 +81,7 @@ namespace GLMS.Web.Controllers
             ViewBag.SelectedContractId = contractId;
             ViewBag.ExchangeRate = rate;
 
-            // Validate inputs
+            
             if (string.IsNullOrWhiteSpace(description))
             {
                 ModelState.AddModelError("", "Description is required.");
@@ -95,7 +94,7 @@ namespace GLMS.Web.Controllers
                 return View();
             }
 
-            // Fetch and validate contract
+            
             var contract = await _contractRepo.GetByIdAsync(contractId);
             if (contract == null)
             {
@@ -103,7 +102,7 @@ namespace GLMS.Web.Controllers
                 return View();
             }
 
-            // Workflow validation — block expired or on-hold contracts
+           
             if (contract.Status == ContractStatus.Expired || contract.Status == ContractStatus.OnHold)
             {
                 TempData["Error"] = $"Cannot create a service request for a contract with status: {contract.Status}.";
@@ -130,7 +129,7 @@ namespace GLMS.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: /ServiceRequests/Details/5
+        
         public async Task<IActionResult> Details(int id)
         {
             var request = await _context.ServiceRequests

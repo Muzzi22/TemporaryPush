@@ -16,7 +16,7 @@ namespace GLMS.Web.Controllers
             _context = context;
         }
 
-        // ── ALL users can view clients ────────────────────────
+       
         public async Task<IActionResult> Index()
         {
             var clients = await _context.Clients
@@ -25,7 +25,7 @@ namespace GLMS.Web.Controllers
             return View(clients);
         }
 
-        // ── ALL users can view client details ─────────────────
+        // all users can view client details 
         public async Task<IActionResult> Details(int id)
         {
             var client = await _context.Clients
@@ -36,11 +36,11 @@ namespace GLMS.Web.Controllers
             return View(client);
         }
 
-        // ── ADMIN ONLY: Show create form ──────────────────────
+        
         [Authorize(Roles = "Admin")]
         public IActionResult Create() => View();
 
-        // ── ADMIN ONLY: Save new client ───────────────────────
+        // admin- save client
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -69,7 +69,7 @@ namespace GLMS.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // ── ADMIN ONLY: Show edit form ────────────────────────
+        // admin - show form
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id)
         {
@@ -78,7 +78,7 @@ namespace GLMS.Web.Controllers
             return View(client);
         }
 
-        // ── ADMIN ONLY: Save edited client ────────────────────
+        // admin- save and delete 
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]

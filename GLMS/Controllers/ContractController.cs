@@ -46,7 +46,7 @@ namespace GLMS.Web.Controllers
             _emailService = emailService;
         }
 
-        // ── Index ─────────────────────────────────────────────
+        // Index
         public async Task<IActionResult> Index(
             DateTime? startDate, DateTime? endDate, ContractStatus? status)
         {
@@ -88,7 +88,7 @@ namespace GLMS.Web.Controllers
             return View(contracts);
         }
 
-        // ── Details ───────────────────────────────────────────
+       
         public async Task<IActionResult> Details(int id)
         {
             var contract = await _contractRepo.GetByIdAsync(id);
@@ -102,7 +102,7 @@ namespace GLMS.Web.Controllers
                     return RedirectToAction("AccessDenied", "Account");
             }
 
-            // Check if client already uploaded signed contract
+            
             var signedUpload = await _context.ClientSignedContracts
                 .FirstOrDefaultAsync(s => s.ContractId == id);
 
@@ -112,7 +112,7 @@ namespace GLMS.Web.Controllers
             return View(contract);
         }
 
-        // ── ADMIN ONLY: Show create form ──────────────────────
+       
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create()
         {
@@ -120,7 +120,7 @@ namespace GLMS.Web.Controllers
             return View();
         }
 
-        // ── ADMIN ONLY: Save new contract ─────────────────────
+        
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -143,21 +143,21 @@ namespace GLMS.Web.Controllers
                 return View();
             }
 
-            // Factory Pattern creates contract with correct defaults
+            // Factory Pattern 
             var contract = _contractFactory.CreateContract(
                 clientId, startDate, endDate, serviceLevel);
 
             await _contractRepo.AddAsync(contract);
             await _contractRepo.SaveAsync();
 
-            // Reload with client info for PDF generation
+            
             var fullContract = await _context.Contracts
                 .Include(c => c.Client)
                 .FirstOrDefaultAsync(c => c.Id == contract.Id);
 
             if (fullContract != null)
             {
-                // Auto-generate PDF
+              
                 var pdfPath = await _pdfService
                     .GenerateContractPdfAsync(fullContract);
 
@@ -175,7 +175,7 @@ namespace GLMS.Web.Controllers
                     notifyClients: true,
                     notifyAdmins: false);
 
-                // Send email to all client users linked to this client
+               
                 var clientUsers = _userManager.Users
                     .Where(u => u.ClientId == fullContract.ClientId)
                     .ToList();
@@ -201,7 +201,7 @@ namespace GLMS.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // ── ADMIN ONLY: Update contract status ────────────────
+        
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -224,7 +224,7 @@ namespace GLMS.Web.Controllers
             await _eventService.NotifyStatusChangedAsync(
                 contract, oldStatus, newStatus);
 
-            // In-app notification for clients when contract becomes active
+            
             if (newStatus == ContractStatus.Active &&
                 oldStatus != ContractStatus.Active)
             {
@@ -261,7 +261,7 @@ namespace GLMS.Web.Controllers
             return RedirectToAction(nameof(Details), new { id });
         }
 
-        // ── ALL users: Download generated contract PDF ────────
+        
         public async Task<IActionResult> DownloadAgreement(int id)
         {
             var contract = await _contractRepo.GetByIdAsync(id);
@@ -291,7 +291,7 @@ namespace GLMS.Web.Controllers
                 $"Contract_GLMS{id:D5}.pdf");
         }
 
-        // ── CLIENT: Upload their signed contract ──────────────
+        //client- upload signed contract
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UploadSignedContract(
@@ -306,7 +306,7 @@ namespace GLMS.Web.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return Unauthorized();
 
-            // Ensure client owns this contract
+           
             if (!User.IsInRole("Admin") &&
                 user.ClientId != contract.ClientId)
                 return RedirectToAction("AccessDenied", "Account");
@@ -325,7 +325,7 @@ namespace GLMS.Web.Controllers
                     new { id = contractId });
             }
 
-            // Save the signed file to disk
+           
             var folderPath = Path.Combine(
                 _env.WebRootPath, "contracts", "signed");
             Directory.CreateDirectory(folderPath);
@@ -339,7 +339,7 @@ namespace GLMS.Web.Controllers
             var relativePath = Path.Combine(
                 "contracts", "signed", fileName);
 
-            // Save or replace existing signed contract record
+            
             var existing = await _context.ClientSignedContracts
                 .FirstOrDefaultAsync(s => s.ContractId == contractId);
 
@@ -396,7 +396,7 @@ namespace GLMS.Web.Controllers
                 new { id = contractId });
         }
 
-        // ── ADMIN: Download client signed contract ────────────
+       
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DownloadSignedContract(int id)
         {
@@ -418,7 +418,7 @@ namespace GLMS.Web.Controllers
                 $"SignedContract_{signed.ContractId}.pdf");
         }
 
-        // ── ADMIN ONLY: Show upload form ─────────────────────
+        // admin - show upload form
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UploadAgreement(int id)
         {
@@ -427,7 +427,7 @@ namespace GLMS.Web.Controllers
             return View(contract);
         }
 
-        // ── ADMIN ONLY: Save uploaded PDF ────────────────────
+        // admin - save upload pdf 
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -449,7 +449,7 @@ namespace GLMS.Web.Controllers
                 return RedirectToAction(nameof(Details), new { id });
             }
 
-            // Delete old file if one exists
+            // Delete old file
             if (!string.IsNullOrEmpty(contract.SignedAgreementPath))
             {
                 var oldPath = Path.Combine(
@@ -471,7 +471,7 @@ namespace GLMS.Web.Controllers
             return RedirectToAction(nameof(Details), new { id });
         }
 
-        // ── Notification helper ───────────────────────────────
+        
         private async Task NotifyUsersAsync(
             Contract contract,
             string message,

@@ -1,6 +1,8 @@
 wwwroot\contracts\generated\Contract_3_7d3e945c-0bcb-4f19-9cbd-f2c75b8237fc.pdf
 wwwroot\contracts\generated\Contract_4_8d01cd04-d7c9-4beb-8cc5-bbbd8f1f6cb5.pdf
 wwwroot\contracts\generated\Contract_5_a2c92f22-8e7b-47c1-b814-254ffacdbfbe.pdf
+wwwroot\contracts\generated\Contract_6_b9ddfcf5-1d1a-4a4a-b4a1-5e938c3975f1.pdf
+wwwroot\contracts\generated\Contract_7_528ff799-3fc5-40be-aab9-502c828801c6.pdf
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js

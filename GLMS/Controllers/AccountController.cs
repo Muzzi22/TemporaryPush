@@ -22,7 +22,7 @@ namespace GLMS.Web.Controllers
             _logger = logger;
         }
 
-        // GET: /Account/Login
+        // account /login get 
         [AllowAnonymous]
         public IActionResult Login(string? returnUrl = null)
         {
@@ -33,7 +33,7 @@ namespace GLMS.Web.Controllers
             return View();
         }
 
-        // POST: /Account/Login
+        //account /login post 
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -55,7 +55,7 @@ namespace GLMS.Web.Controllers
                 if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                     return Redirect(returnUrl);
 
-                // Regular users go to their own dashboard
+                // users which are regular to their dashboard 
                 return RedirectToAction("Index", "UserDashboard");
             }
 
@@ -69,7 +69,7 @@ namespace GLMS.Web.Controllers
             return View(model);
         }
 
-        // GET: /Account/Register
+        // Account register Get
         [AllowAnonymous]
         public IActionResult Register()
         {
@@ -79,7 +79,7 @@ namespace GLMS.Web.Controllers
             return View();
         }
 
-        // POST: /Account/Register
+        // Account register post
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -112,7 +112,7 @@ namespace GLMS.Web.Controllers
             return View(model);
         }
 
-        // POST: /Account/Logout
+        // Account/Logout
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
@@ -121,7 +121,7 @@ namespace GLMS.Web.Controllers
             return RedirectToAction("Login");
         }
 
-        // GET: /Account/AccessDenied
+        // Account/AccessDenied
         public IActionResult AccessDenied()
         {
             return View();
