@@ -3,28 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\muzsu\\source\\repos\\GLMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\muzsu\\source\\repos\\GLMS\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\apiintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\apiintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GLMS.API\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GLMS\\Dockerfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\glms.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\glms.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|solutionrelative:glms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.api\\controllers\\contractscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|solutionrelative:glms.api\\controllers\\contractscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|solutionrelative:glms.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|solutionrelative:glms.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.api\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|solutionrelative:glms.api\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.api\\controllers\\servicerequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A15812F-99F4-44D5-9D89-E087782DC1FD}|GLMS.API\\GLMS.API.csproj|solutionrelative:glms.api\\controllers\\servicerequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\userdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\userdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\contractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,48 +87,40 @@
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\observerpattentests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\observerpattentests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\notificationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\notificationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\clientmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\clientmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\factorypatterntests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\factorypatterntests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\servicerequesttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\servicerequesttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\contractworkflowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\contractworkflowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\servicerequesttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\servicerequesttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\factorypatterntests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\factorypatterntests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\clientmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\clientmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\notificationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\notificationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\fileservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\fileservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\currencyservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\currencyservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\contracts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\contracts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\contracts\\uploadagreement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\contracts\\uploadagreement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\contracts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\contracts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\services\\contractpdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,40 +135,44 @@
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms.tests\\currencyservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB923F52-7B77-4792-6033-74E953A84482}|GLMS.Tests\\GLMS.Tests.csproj|solutionrelative:glms.tests\\currencyservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\admin\\contracts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\admin\\contracts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\contracts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\contracts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\admin\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\admin\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421212223_addclientlinkandsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421212223_addclientlinkandsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\admin\\assignclient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\admin\\assignclient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\admin\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\admin\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\services\\icontractpdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\services\\icontractpdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\models\\clientsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\models\\clientsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421211237_addclientlinkandsignedcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421211237_addclientlinkandsignedcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,24 +183,44 @@
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421100525_linkusertoclientandsignedcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\models\\clientsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\models\\clientsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421095410_linkusertoclientandsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421095410_linkusertoclientandsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\services\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\services\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421084920_addcontractnotification1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421084920_addcontractnotification1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421083952_addcontractnotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421083952_addcontractnotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\userdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -167,16 +235,16 @@
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\services\\icurrencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\servicerequests\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\servicerequests\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\servicerequests\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\servicerequests\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\servicerequests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\servicerequests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\servicerequests\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\views\\servicerequests\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -281,26 +349,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421095410_linkusertoclientandsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421095410_linkusertoclientandsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421084920_addcontractnotification1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421084920_addcontractnotification1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421083952_addcontractnotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421083952_addcontractnotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421212223_addclientlinkandsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421212223_addclientlinkandsignedcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|c:\\users\\muzsu\\source\\repos\\glms\\glms\\migrations\\20260421211237_addclientlinkandsignedcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D78213-79A6-FBB7-05FC-3D61EC9CDCD6}|GLMS\\GLMS.csproj|solutionrelative:glms\\migrations\\20260421211237_addclientlinkandsignedcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -314,7 +362,189 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile.txt",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Dockerfile.txt",
+              "RelativeDocumentMoniker": "GLMS.API\\Dockerfile.txt",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Dockerfile.txt",
+              "RelativeToolTip": "GLMS.API\\Dockerfile.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-06-04T21:35:15.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dockerfile.txt",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Dockerfile.txt",
+              "RelativeDocumentMoniker": "GLMS\\Dockerfile.txt",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Dockerfile.txt",
+              "RelativeToolTip": "GLMS\\Dockerfile.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-06-04T21:35:15.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-06-04T21:35:14.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\ApiIntegrationTests.cs",
+              "RelativeDocumentMoniker": "GLMS.Tests\\ApiIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\ApiIntegrationTests.cs",
+              "RelativeToolTip": "GLMS.Tests\\ApiIntegrationTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T20:58:40.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GLMS.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\GLMS.Tests.csproj",
+              "RelativeDocumentMoniker": "GLMS.Tests\\GLMS.Tests.csproj",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\GLMS.Tests.csproj",
+              "RelativeToolTip": "GLMS.Tests\\GLMS.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-04T20:55:15.308Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "GLMS\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\ApiService.cs",
+              "RelativeToolTip": "GLMS\\Services\\ApiService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T20:44:25.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Program.cs",
+              "RelativeDocumentMoniker": "GLMS.API\\Program.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Program.cs",
+              "RelativeToolTip": "GLMS.API\\Program.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAmwIwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T20:06:38.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContractsController.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Controllers\\ContractsController.cs",
+              "RelativeDocumentMoniker": "GLMS.API\\Controllers\\ContractsController.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Controllers\\ContractsController.cs",
+              "RelativeToolTip": "GLMS.API\\Controllers\\ContractsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T20:25:40.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\appsettings.json",
+              "RelativeDocumentMoniker": "GLMS.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\appsettings.json",
+              "RelativeToolTip": "GLMS.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-04T20:05:23.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\appsettings.json",
+              "RelativeDocumentMoniker": "GLMS\\appsettings.json",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\appsettings.json",
+              "RelativeToolTip": "GLMS\\appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-20T17:39:17.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Program.cs",
+              "RelativeDocumentMoniker": "GLMS\\Program.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Program.cs",
+              "RelativeToolTip": "GLMS\\Program.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAqwGcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T17:39:15.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "GLMS\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "GLMS\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAqwIoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T18:30:07.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "GLMS.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "GLMS.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T20:24:34.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "GLMS.API\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "GLMS.API\\Controllers\\ClientsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T20:25:08.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServiceRequestsController.cs",
+              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Controllers\\ServiceRequestsController.cs",
+              "RelativeDocumentMoniker": "GLMS.API\\Controllers\\ServiceRequestsController.cs",
+              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.API\\Controllers\\ServiceRequestsController.cs",
+              "RelativeToolTip": "GLMS.API\\Controllers\\ServiceRequestsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T20:26:22.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "UserDashboardController.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\UserDashboardController.cs",
               "RelativeDocumentMoniker": "GLMS\\Controllers\\UserDashboardController.cs",
@@ -326,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "GLMS\\Controllers\\AdminController.cs",
@@ -338,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 17,
               "Title": "ServiceRequestController.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\ServiceRequestController.cs",
               "RelativeDocumentMoniker": "GLMS\\Controllers\\ServiceRequestController.cs",
@@ -346,48 +576,23 @@
               "RelativeToolTip": "GLMS\\Controllers\\ServiceRequestController.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAqwIMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T18:02:38.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T18:02:38.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\appsettings.json",
-              "RelativeDocumentMoniker": "GLMS\\appsettings.json",
-              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\appsettings.json",
-              "RelativeToolTip": "GLMS\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-20T17:39:17.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "GLMS\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\HomeController.cs",
               "RelativeToolTip": "GLMS\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAIBJwB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-21T09:16:50.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Program.cs",
-              "RelativeDocumentMoniker": "GLMS\\Program.cs",
-              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Program.cs",
-              "RelativeToolTip": "GLMS\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T17:39:15.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 19,
               "Title": "ContractController.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\ContractController.cs",
               "RelativeDocumentMoniker": "GLMS\\Controllers\\ContractController.cs",
@@ -399,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 20,
               "Title": "ClientsController.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\ClientsController.cs",
               "RelativeDocumentMoniker": "GLMS\\Controllers\\ClientsController.cs",
@@ -411,19 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "GLMS\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "GLMS\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAowHsAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T18:30:07.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "ObserverPattenTests.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\ObserverPattenTests.cs",
               "RelativeDocumentMoniker": "GLMS.Tests\\ObserverPattenTests.cs",
@@ -435,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "ContractWorkflowTests.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\ContractWorkflowTests.cs",
               "RelativeDocumentMoniker": "GLMS.Tests\\ContractWorkflowTests.cs",
@@ -447,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "ServiceRequestTests.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\ServiceRequestTests.cs",
               "RelativeDocumentMoniker": "GLMS.Tests\\ServiceRequestTests.cs",
@@ -459,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "FactoryPatternTests.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\FactoryPatternTests.cs",
               "RelativeDocumentMoniker": "GLMS.Tests\\FactoryPatternTests.cs",
@@ -471,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 25,
               "Title": "ClientModelTests.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\ClientModelTests.cs",
               "RelativeDocumentMoniker": "GLMS.Tests\\ClientModelTests.cs",
@@ -483,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 26,
               "Title": "NotificationTest.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\NotificationTest.cs",
               "RelativeDocumentMoniker": "GLMS.Tests\\NotificationTest.cs",
@@ -495,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 27,
               "Title": "FileServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\FileServiceTest.cs",
               "RelativeDocumentMoniker": "GLMS.Tests\\FileServiceTest.cs",
@@ -507,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Contracts\\Index.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Contracts\\Index.cshtml",
@@ -519,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
               "Title": "UploadAgreement.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Contracts\\UploadAgreement.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Contracts\\UploadAgreement.cshtml",
@@ -531,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "ContractPdfService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\ContractPdfService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\ContractPdfService.cs",
@@ -543,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "DashBoard.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Admin\\DashBoard.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Admin\\DashBoard.cshtml",
@@ -555,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Shared\\_Layout.cshtml",
@@ -567,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 33,
               "Title": "CurrencyServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS.Tests\\CurrencyServiceTest.cs",
               "RelativeDocumentMoniker": "GLMS.Tests\\CurrencyServiceTest.cs",
@@ -579,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 34,
               "Title": "Contracts.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Admin\\Contracts.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Admin\\Contracts.cshtml",
@@ -591,7 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 35,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Contracts\\Details.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Contracts\\Details.cshtml",
@@ -603,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 36,
               "Title": "20260421212223_AddClientLinkAndSignedContract.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260421212223_AddClientLinkAndSignedContract.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260421212223_AddClientLinkAndSignedContract.cs",
@@ -615,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 37,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\IEmailService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\IEmailService.cs",
@@ -627,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 38,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\EmailService.cs",
@@ -639,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 39,
               "Title": "AssignClient.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Admin\\AssignClient.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Admin\\AssignClient.cshtml",
@@ -651,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 40,
               "Title": "User.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Admin\\User.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Admin\\User.cshtml",
@@ -663,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 41,
               "Title": "IContractPdfService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\IContractPdfService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\IContractPdfService.cs",
@@ -675,7 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 42,
               "Title": "20260421211237_AddClientLinkAndSignedContracts.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260421211237_AddClientLinkAndSignedContracts.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260421211237_AddClientLinkAndSignedContracts.cs",
@@ -687,7 +880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 43,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\ApplicationUser.cs",
@@ -699,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 44,
               "Title": "20260421100525_LinkUserToClientAndSignedContracts.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260421100525_LinkUserToClientAndSignedContracts.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260421100525_LinkUserToClientAndSignedContracts.cs",
@@ -711,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 45,
               "Title": "ClientSignedContract.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\ClientSignedContract.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\ClientSignedContract.cs",
@@ -723,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 46,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "GLMS\\Data\\AppDbContext.cs",
@@ -735,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 47,
               "Title": "20260421095410_LinkUserToClientAndSignedContract.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260421095410_LinkUserToClientAndSignedContract.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260421095410_LinkUserToClientAndSignedContract.cs",
@@ -747,19 +940,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 48,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Shared\\Error.cshtml",
               "ToolTip": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Shared\\Error.cshtml",
               "RelativeToolTip": "GLMS\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAIBJwA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBZwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-21T09:14:55.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 49,
               "Title": "CurrencyService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\CurrencyService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\CurrencyService.cs",
@@ -771,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 50,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\_ViewImports.cshtml",
@@ -783,7 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 51,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\ErrorViewModel.cs",
@@ -795,7 +988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 52,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Clients\\Index.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Clients\\Index.cshtml",
@@ -807,7 +1000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 53,
               "Title": "20260421084920_AddContractNotification1.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260421084920_AddContractNotification1.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260421084920_AddContractNotification1.cs",
@@ -819,7 +1012,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 54,
               "Title": "20260421083952_AddContractNotifications.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260421083952_AddContractNotifications.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260421083952_AddContractNotifications.cs",
@@ -831,7 +1024,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 55,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\UserDashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\UserDashboard\\Index.cshtml",
@@ -843,7 +1036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 56,
               "Title": "ContractNotification.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\ContractNotification.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\ContractNotification.cs",
@@ -855,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 57,
               "Title": "ICurrencyService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\ICurrencyService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\ICurrencyService.cs",
@@ -867,7 +1060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 58,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\ServiceRequests\\Create.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\ServiceRequests\\Create.cshtml",
@@ -879,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 59,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\ServiceRequests\\Index.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\ServiceRequests\\Index.cshtml",
@@ -891,7 +1084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 60,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\ServiceRequests\\Details.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\ServiceRequests\\Details.cshtml",
@@ -903,7 +1096,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 61,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Account\\Login.cshtml",
@@ -915,7 +1108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 62,
               "Title": "DbSeeder.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Data\\DbSeeder.cs",
               "RelativeDocumentMoniker": "GLMS\\Data\\DbSeeder.cs",
@@ -927,7 +1120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 63,
               "Title": "20260420184403_AddIdentity.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260420184403_AddIdentity.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260420184403_AddIdentity.cs",
@@ -939,7 +1132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 64,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Account\\AccessDenied.cshtml",
@@ -951,7 +1144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 65,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Account\\Register.cshtml",
@@ -963,7 +1156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 66,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "GLMS\\ViewModels\\LoginViewModel.cs",
@@ -975,7 +1168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 67,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "GLMS\\ViewModels\\RegisterViewModel.cs",
@@ -987,7 +1180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 68,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Clients\\Edit.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Clients\\Edit.cshtml",
@@ -999,7 +1192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 69,
               "Title": "IServiceRequestRepository.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Repository\\IServiceRequestRepository.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Repository\\IServiceRequestRepository.cs",
@@ -1011,7 +1204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 70,
               "Title": "ServiceRequestRepository.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Repository\\ServiceRequestRepository.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Repository\\ServiceRequestRepository.cs",
@@ -1023,7 +1216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 71,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Contracts\\Create.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Contracts\\Create.cshtml",
@@ -1035,7 +1228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 72,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Clients\\Details.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Clients\\Details.cshtml",
@@ -1047,7 +1240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 73,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Views\\Clients\\Create.cshtml",
               "RelativeDocumentMoniker": "GLMS\\Views\\Clients\\Create.cshtml",
@@ -1059,7 +1252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 74,
               "Title": "20260420180838_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Migrations\\20260420180838_InitialCreate.cs",
               "RelativeDocumentMoniker": "GLMS\\Migrations\\20260420180838_InitialCreate.cs",
@@ -1071,7 +1264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 75,
               "Title": "FileService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\FileService.cs",
@@ -1083,7 +1276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 76,
               "Title": "IFileService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Services\\IFileService.cs",
               "RelativeDocumentMoniker": "GLMS\\Services\\IFileService.cs",
@@ -1095,7 +1288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 77,
               "Title": "ContractExpiryObserver.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Observer\\ContractExpiryObserver.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Observer\\ContractExpiryObserver.cs",
@@ -1107,7 +1300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 78,
               "Title": "ContractEventService.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Observer\\ContractEventService.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Observer\\ContractEventService.cs",
@@ -1119,7 +1312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 79,
               "Title": "IContractObserver.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Observer\\IContractObserver.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Observer\\IContractObserver.cs",
@@ -1131,7 +1324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 80,
               "Title": "ContractRepository.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Repository\\ContractRepository.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Repository\\ContractRepository.cs",
@@ -1143,7 +1336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 81,
               "Title": "IContractRepository.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Repository\\IContractRepository.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Repository\\IContractRepository.cs",
@@ -1155,7 +1348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 82,
               "Title": "StandardContractFactory.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Factory\\StandardContractFactory.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Factory\\StandardContractFactory.cs",
@@ -1167,7 +1360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 83,
               "Title": "IContractFactory.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Patten\\Factory\\IContractFactory.cs",
               "RelativeDocumentMoniker": "GLMS\\Patten\\Factory\\IContractFactory.cs",
@@ -1179,7 +1372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 84,
               "Title": "ServiceRequest.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\ServiceRequest.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\ServiceRequest.cs",
@@ -1191,7 +1384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 85,
               "Title": "Contract.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\Contract.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\Contract.cs",
@@ -1203,7 +1396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 86,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\muzsu\\source\\repos\\GLMS\\GLMS\\Models\\Client.cs",
               "RelativeDocumentMoniker": "GLMS\\Models\\Client.cs",

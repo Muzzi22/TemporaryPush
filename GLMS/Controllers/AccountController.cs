@@ -1,4 +1,5 @@
 ﻿using GLMS.Web.Models;
+using GLMS.Web.Services;
 using GLMS.Web.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -11,15 +12,18 @@ namespace GLMS.Web.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<AccountController> _logger;
+        private readonly IApiService _apiService;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            ILogger<AccountController> logger)
+            ILogger<AccountController> logger,
+            IApiService apiService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _apiService = apiService;
         }
 
         // account /login get 
@@ -48,6 +52,11 @@ namespace GLMS.Web.Controllers
             {
                 _logger.LogInformation("User {Email} logged in.", model.Email);
 
+                // Get JWT token from API and store in session
+                var token = await _apiService.LoginAsync(model.Email, model.Password);
+                if (token != null)
+                    HttpContext.Session.SetString("JwtToken", token);
+
                 var user = await _userManager.FindByEmailAsync(model.Email);
                 if (user != null && await _userManager.IsInRoleAsync(user, "Admin"))
                     return RedirectToAction("Dashboard", "Admin");
@@ -55,7 +64,6 @@ namespace GLMS.Web.Controllers
                 if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                     return Redirect(returnUrl);
 
-                // users which are regular to their dashboard 
                 return RedirectToAction("Index", "UserDashboard");
             }
 
@@ -117,6 +125,7 @@ namespace GLMS.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
+            HttpContext.Session.Remove("JwtToken");
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login");
         }

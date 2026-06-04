@@ -62,6 +62,17 @@ builder.Services.AddHttpClient<ICurrencyService, CurrencyService>();
 builder.Services.AddScoped<IContractPdfService, ContractPdfService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 
+// ── API Service (calls GLMS.API) ──────────────────────────────
+builder.Services.AddHttpClient<IApiService, ApiService>();
+
+// ── Session (stores JWT token) ────────────────────────────────
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromHours(8);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 var app = builder.Build();
 
 // ── Seed database on startup ──────────────────────────────────
@@ -82,6 +93,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
